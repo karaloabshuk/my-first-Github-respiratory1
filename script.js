@@ -159,3 +159,19 @@ function maxrange(a,b){
 var maxrange=maxrange(10,8)
 console.log(maxrange)
 
+function addup(a){
+    if(isNaN(a)){
+        return " only numbers please"
+    }
+    else if(a<0){
+        return "only positive numbers please"
+    }
+    else{ var result=0
+        for(i=1;i<=a;i++){
+            result=result+i
+        }
+        return result
+    }
+}
+var added=addup(4)
+console.log(added)
