@@ -192,3 +192,18 @@ let singleletter=a.charat(i)
     return hiddenword
 }
 
+function addup(num){
+    let sum=0
+    if(isNaN(num)){
+        return "only numbers are allowed"
+    }
+
+    for(i=1;i<=num;i++){
+         sum=sum+i
+}
+return sum
+}
+
+let answer=addup(10)
+console.log(answer)
+
