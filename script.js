@@ -53,3 +53,18 @@ if (score > pass){
 }else{
     console.log("failed")
 }
+
+
+function secmin(min,){
+    if(isNaN(min)){
+        return "only number"
+    }
+    else if(min<=0){
+        return"only positive numbers"
+    }
+    else return min*60
+}
+
+let answer=secmin(7)
+console.log(answer)
+
