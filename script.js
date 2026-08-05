@@ -122,3 +122,21 @@ if (num>100){
 let result=grade(101)
 console.log(result)
 
+
+function addup(a){
+if(isNaN(a)){
+    return "only numbers are allowed"
+}
+else if (a<0){
+    return "only positive numbers"
+}
+else {
+    var result =0
+    for(i=0;i<=a;i++)
+        result=result+i
+}
+return result
+}
+var added=addup(4)
+console.log(added)
+
