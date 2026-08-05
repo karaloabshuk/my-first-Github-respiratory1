@@ -183,4 +183,12 @@ let karalo = {
 console.log(karalo)
 let num=234.654
 console.log(Math.floor(num))
+function Detectletter(a){
+    let hiddenword=""
+for(i=0;i<a.length;i++){
+let singleletter=a.charat(i)
+}
+
+    return hiddenword
+}
 
