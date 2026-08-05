@@ -175,3 +175,12 @@ function addup(a){
 }
 var added=addup(4)
 console.log(added)
+
+let karalo = {
+    firstname:"lapulga",
+    lastname:"the goat"
+}
+console.log(karalo)
+let num=234.654
+console.log(Math.floor(num))
+
