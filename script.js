@@ -68,3 +68,13 @@ function secmin(min,){
 let answer=secmin(7)
 console.log(answer)
 
+
+function adding(num){
+    if(isNaN(num)){
+        return "only numbers"
+    }
+     else return num+1
+}
+
+let answer=adding(98765434567890)
+console.log(answer)
