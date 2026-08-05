@@ -140,3 +140,22 @@ return result
 var added=addup(4)
 console.log(added)
 
+
+function power(V,C){
+    if(isNaN(V)||isNaN(C)){
+        return "only numbers are allowed"
+    }
+    else return V*C
+}
+var power=power(230,10)
+console.log(power)
+
+function maxrange(a,b){
+    if (isNaN(a)||isNaN(b)){
+        return "only numbers"
+    }
+    else return (a+b)-1
+}
+var maxrange=maxrange(10,8)
+console.log(maxrange)
+
