@@ -230,3 +230,19 @@ function array(arr1, arr2) {
 
 let answer = array([2, 4, 6, 4], [3, 5, 7, 8]);
 console.log(answer);
+
+function mathstick(num){
+    if(isNaN(num)){
+          return "Only numbers are allowed"
+    }
+    else if(num<=0){
+        return "only positive numbers are allowed"
+    }
+
+    else{
+        return 5*num+1
+    }
+}
+
+let sticks=mathstick(4)
+console.log(sticks)
