@@ -78,3 +78,47 @@ function adding(num){
 
 let answer=adding(98765434567890)
 console.log(answer)
+
+function containing 3 arguments 
+cheak if its a number
+general formula that takes the first value 
+
+function firstvalue([a,b,c]){
+    if(isNaN(a)||isNaN(b)||isNaN(c)){
+        return "only numbers"
+    }
+        return a
+}
+
+let value=firstvalue([23,45,56])
+console.log(value)
+
+function grade(num){
+    if(isNaN(num)){
+        return "Only numbers are allowed"
+    }
+  if (num >= 90 && num <= 100) {
+ return "A"
+}
+if  (num >=85 && num <= 89 ){
+    return "B"
+}
+if (num>=80 && num<=84){
+    return "C"
+}
+if (num>=75 && num<=79){
+    return "D"
+}
+if (num <75 && num>=0){
+    return"F"
+}
+if (num>100){
+    return "only numbers between 1 and 100"
+}
+    
+
+}
+
+let result=grade(101)
+console.log(result)
+
