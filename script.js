@@ -207,3 +207,26 @@ return sum
 let answer=addup(10)
 console.log(answer)
 
+function array(arr1, arr2) {
+    if (!Array.isArray(arr1) || !Array.isArray(arr2)) {
+        return "Both of them need to be an array";
+    }
+
+    let arr1sorted = arr1.sort();
+    let arr2sorted = arr2.sort();
+
+    let arr1min = arr1sorted[0];
+    let arr2min = arr2sorted[0];
+
+    let arr1max = arr1sorted[arr1sorted.length - 1];
+    let arr2max = arr2sorted[arr2sorted.length - 1];
+
+    if (arr1min <= arr2min || arr1max >= arr2max) {
+        return "False";
+    } else {
+        return "True";
+    }
+}
+
+let answer = array([2, 4, 6, 4], [3, 5, 7, 8]);
+console.log(answer);
