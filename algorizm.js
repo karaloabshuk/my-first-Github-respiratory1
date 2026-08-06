@@ -347,5 +347,20 @@ function mathstick(num){
     }
 }
 
+function minmax(a){
+    if(!Array.isArray(a)){
+        return "only numbers with in an array"
+    }
+
+    let assending = a.sort((x,y)=>x-y)
+    let min = assending[0]
+    let max = assending[a.length-1]
+
+    return {max,min}
+}
+
+let answer=minmax([1,2,3,4,5])
+console.log(answer)
+
 let sticks=mathstick(4)
 console.log(sticks)
