@@ -315,8 +315,8 @@ function array(arr1, arr2) {
         return "Both of them need to be an array";
     }
 
-    let arr1sorted = arr1.sort();
-    let arr2sorted = arr2.sort();
+    let arr1sorted = arr1.sort((x,y) =>x-y);
+    let arr2sorted = arr2.sort((x,y) =>x-y);;
 
     let arr1min = arr1sorted[0];
     let arr2min = arr2sorted[0];
