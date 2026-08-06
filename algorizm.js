@@ -421,4 +421,9 @@ fizzBuzz(15)
     for (let char of str.toLowerCase()) {
         if ("aeiou".includes(char)) count++
 
+function findDuplicates(arr) {
+    let seen = {}
+    let duplicates = []
+    for (let item of arr) {
+
 
