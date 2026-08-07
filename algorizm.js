@@ -1,3 +1,11 @@
+function fibonacci(n) {
+  if (n <= 1) return n
+  return fibonacci(n - 1) + fibonacci(n - 2)
+}
+
+fibonacci(7) // 13
+
+
 function binarySearch(arr, target) {
   let left = 0, right = arr.length - 1
 
