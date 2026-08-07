@@ -1,3 +1,11 @@
+function reverseString(str) {
+  return str.split('').reverse().join('')
+}
+
+reverseString('hello') // 'olleh'
+
+
+
 function factorial(n) {
   if (n === 0) return 1
   return n * factorial(n - 1)
