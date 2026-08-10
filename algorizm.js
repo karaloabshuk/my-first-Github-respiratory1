@@ -1,3 +1,9 @@
+function isAnagram(str1, str2) {
+    let sort = str => str.split('').sort().join('')
+    return sort(str1) === sort(str2)
+
+
+
 function isPrime(n) {
     if (n <= 1) return false
     for (let i = 2; i <= Math.sqrt(n); i++) {
