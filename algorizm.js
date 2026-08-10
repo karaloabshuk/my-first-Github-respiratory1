@@ -1,3 +1,16 @@
+function selectionSort(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        let minIndex = i
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j
+            }
+        }
+        [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]]
+    }
+    return arr
+
+
 function findDuplicates(arr) {
   return arr.filter((item, index) => arr.indexOf(item) !== index)
 }
