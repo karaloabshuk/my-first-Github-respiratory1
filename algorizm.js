@@ -1,3 +1,10 @@
+function sumArray(arr) {
+    return arr.reduce((total, current) => total + current, 0)
+}
+
+
+
+
 function isAnagram(str1, str2) {
     let sort = str => str.split('').sort().join('')
     return sort(str1) === sort(str2)
