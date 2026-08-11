@@ -1,3 +1,11 @@
+function power(base, exp) {
+    if (exp === 0) return 1
+    return base * power(base, exp - 1)
+}
+
+
+
+
 function capitalizeWords(str) {
     return str.split(' ')
               .map(word => word[0].toUpperCase() + word.slice(1))
