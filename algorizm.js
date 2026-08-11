@@ -1,3 +1,11 @@
+function capitalizeWords(str) {
+    return str.split(' ')
+              .map(word => word[0].toUpperCase() + word.slice(1))
+              .join(' ')
+}
+
+
+
 function countDuplicates(arr) {
     let count = {}
     for (let item of arr) {
