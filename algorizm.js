@@ -1,3 +1,14 @@
+function countDuplicates(arr) {
+    let count = {}
+    for (let item of arr) {
+        count[item] = (count[item] || 0) + 1
+    }
+    return count
+}
+
+
+
+
 function quickSort(arr) {
     if (arr.length <= 1) return arr
     let pivot = arr[0]
