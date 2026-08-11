@@ -1,3 +1,14 @@
+function longestWord(str) {
+    let words = str.split(' ')
+    let longest = ''
+    for (let word of words) {
+        if (word.length > longest.length) longest = word
+    }
+    return longest
+}
+
+
+
 function twoSum(arr, target) {
     let map = {}
     for (let i = 0; i < arr.length; i++) {
