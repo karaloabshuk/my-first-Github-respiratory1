@@ -1,3 +1,17 @@
+function twoSum(arr, target) {
+    let map = {}
+    for (let i = 0; i < arr.length; i++) {
+        let complement = target - arr[i]
+        if (map[complement] !== undefined) {
+            return [map[complement], i]
+        }
+        map[arr[i]] = i
+    }
+    return []
+}
+
+
+
 function power(base, exp) {
     if (exp === 0) return 1
     return base * power(base, exp - 1)
