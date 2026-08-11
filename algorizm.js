@@ -1,3 +1,6 @@
+function countWords(str) {
+    return str.trim().split(' ').length
+}
 function longestWord(str) {
     let words = str.split(' ')
     let longest = ''
