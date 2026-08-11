@@ -1,3 +1,8 @@
+function gcd(a, b) {
+    if (b === 0) return a
+    return gcd(b, a % b)
+}
+
 function countWords(str) {
     return str.trim().split(' ').length
 }
