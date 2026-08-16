@@ -14,7 +14,10 @@ function longestWord(str) {
         if (word.length > longest.length) longest = word
     }
     return longest
+    
 }
+let answer=longestword([abebe,abebes,bekelech])
+console.log(answer)
 
 
 
